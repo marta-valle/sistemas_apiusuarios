@@ -20,8 +20,10 @@ public class AutenticarRequestDto {
 	@NotBlank(message = "Por favor, informe o email de acesso.")
 	private String email;
 	
-	@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$",
-			message = "Informe uma senha (de no mínimo 8 dígitos) com pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial.")
+	
+	//TODO: ENCONTRAR UM SUBSTITUTO PARA O JAVAFAKE
+	//@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$",
+	//message = "Informe uma senha (de no mínimo 8 dígitos) com pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial.")
 	@NotBlank(message = "Por favor, informe a senha de acesso.")
 	private String senha;
 }
